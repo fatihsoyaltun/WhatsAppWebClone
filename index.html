@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Whatsapp Web | Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+        <div class="leftSide">
+            <div class="topHeader">
+                <div class="personImg">
+                    <img class="imgC" src="./img/286292943_594729275330229_5933246189503218281_n.jpg" alt="">
+                </div>
+                <ul class="icons-box">
+                    <li><i class="fa-solid fa-message"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+            </div>
+            <div class="chatAside">
+                <div>
+                    <input type="text" placeholder="aratın veya yeni sohbet başlatın">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="chatList">
+                <div class="block" onclick="personOne ()">
+                    <div class="imgBox">
+                        <img class="imgC" src="./img/286292943_594729275330229_5933246189503218281_n.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Fatih Soyaltun</h4>
+                            <p class="time">14.59</p>
+                        </div>
+                        <div class="message-p">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, rerum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="personTwo ()">
+                    <div class="imgBox">
+                        <img class="imgC" src="./img/two.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Ahmet</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="personThree ()">
+                    <div class="imgBox">
+                        <img class="imgC" src="./img/three.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Mehmet</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="personFour ()">
+                    <div class="imgBox">
+                        <img class="imgC" src="./img/user-image-icon-9.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Yunus</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="personFive ()">
+                    <div class="imgBox">
+                        <img class="imgC" src="./img/five.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Ayça</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" onclick="personSix ()">
+                    <div class="imgBox">
+                        <img class="imgC" src="./img/user-image-icon-9.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Mustafa</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightSide person-one">
+            <div class="topHeader">
+                <div class="imgText">
+                    <div class="personImg">
+                        <img class="imgC" src="./img/286292943_594729275330229_5933246189503218281_n.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Fatih <br> <span>online</span></h4>
+                    </div>
+                </div>
+                <ul class="icons-box">
+                    <i class="fa-solid fa-reply fa-beat backTik" onclick="oneBack ()"></i>
+                    <li><i class="fa-solid fa-message"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+            </div>
+            <div class="chatBox">
+                <div class="message my-message">
+                    
+                </div>
+            </div>
+            <div class="chatInput">
+                <i class="fa-solid fa-face-grin-beam"></i>
+                <i class="fa-solid fa-link"></i>
+                <input id="clear" class="oneMessage" type="text" placeholder="Bir mesaj yazın">
+                <i class="fa-solid fa-location-arrow" id="createDiv" onclick="One ()"></i>
+            </div>
+        </div>
+        <div class="rightSide person-two">
+            <div class="topHeader">
+                <div class="imgText">
+                    <div class="personImg">
+                        <img class="imgC" src="./img/286292943_594729275330229_5933246189503218281_n.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Ahmet <br> <span>online</span></h4>
+                    </div>
+                </div>
+                <ul class="icons-box">
+                    <i class="fa-solid fa-reply fa-beat backTik" onclick="twoBack ()"></i>
+                    <li><i class="fa-solid fa-message"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+            </div>
+            <div class="chatBox">
+                <div class="message my-messageTwo">
+                    
+                </div>
+            </div>
+            <div class="chatInput">
+                <i class="fa-solid fa-face-grin-beam"></i>
+                <i class="fa-solid fa-link"></i>
+                <input class="twoMessage" type="text" placeholder="Bir mesaj yazın">
+                <i class="fa-solid fa-location-arrow" id="createDiv" onclick="Two ()"></i>
+            </div>
+        </div>
+        <div class="rightSide person-three">
+            <div class="topHeader">
+                <div class="imgText">
+                    <div class="personImg">
+                        <img class="imgC" src="./img/286292943_594729275330229_5933246189503218281_n.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Mehmet <br> <span>online</span></h4>
+                    </div>
+                </div>
+                <ul class="icons-box">
+                    <i class="fa-solid fa-reply fa-beat backTik" onclick="threeBack ()"></i>
+                    <li><i class="fa-solid fa-message"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+            </div>
+            <div class="chatBox">
+                <div class="message my-messageThree">
+                    
+                </div>
+            </div>
+            <div class="chatInput">
+                <i class="fa-solid fa-face-grin-beam"></i>
+                <i class="fa-solid fa-link"></i>
+                <input class="threeMessage" type="text" placeholder="Bir mesaj yazın">
+                <i class="fa-solid fa-location-arrow" id="createDiv" onclick="Three ()"></i>
+            </div>
+        </div>
+        <div class="rightSide person-four">
+            <div class="topHeader">
+                <div class="imgText">
+                    <div class="personImg">
+                        <img class="imgC" src="./img/286292943_594729275330229_5933246189503218281_n.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Yunus <br> <span>online</span></h4>
+                    </div>
+                </div>
+                <ul class="icons-box">
+                    <i class="fa-solid fa-reply fa-beat backTik" onclick="fourBack ()"></i>
+                    <li><i class="fa-solid fa-message"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+            </div>
+            <div class="chatBox">
+                <div class="message my-messageFour">
+                    
+                </div>
+            </div>
+            <div class="chatInput">
+                <i class="fa-solid fa-face-grin-beam"></i>
+                <i class="fa-solid fa-link"></i>
+                <input class="fourMessage" type="text" placeholder="Bir mesaj yazın">
+                <i class="fa-solid fa-location-arrow" id="createDiv" onclick="Four ()"></i>
+            </div>
+        </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
+
+
